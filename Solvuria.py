@@ -19,7 +19,7 @@ except ImportError:
 
     enterKeyCode = 10
 
-VERSION = 140
+VERSION = 100
 
 UserIdentifier = None
 UserAgent = None
@@ -319,7 +319,7 @@ UserAgent = GetUserAgent()
 print("[>] Solvuria - Enhance your learning experience")
 
 latest = requests.get(
-    "https://api.github.com/repos/corey-truscott/Solvuria/releases/latest"
+    "https://api.github.com/repos/Thatboioofy/Solvuria-Patched/releases/latest"
 ).json()
 versionName = latest["tag_name"]
 if int(versionName.replace(".", "").replace("v", "")) > VERSION:
